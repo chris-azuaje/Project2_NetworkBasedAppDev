@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+        , initial-scale=1.0"
+    />
+    <title>International Photography Meetup Organization</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1fd1ffd6f1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav id="nav_top">
+        <div>
+          <img
+            src="/images/Logo.png"
+            alt="International photography meetup logo"
+            id="IPM_logo"
+            onclick="location.href = '/'"
+          />
+          <h1>IPMO</h1>
+        </div>
+        <div>
+          <a href="/events/newEvent">New Event</a>
+          <a href="#">Sign Up</a>
+          <a href="#">Login</a>
+        </div>
+      </nav>
+      <nav id="nav_bottom">
+        <a href="/events">Events</a>
+      </nav>
+    </header>
+    <main>
+      <h2>New Event 🥳</h2>
+      <form action="#">
+        <div>
+          <label for="category">Category</label>
+          <select name="category" id="category" required>
+            <option value="">--Select a category--</option>
+            <option value="1">Meetup</option>
+            <option value="2">Trip</option>
+            <option value="3">Workshop</option>
+            <option value="4">Surprise Guest</option>
+            <option value="5">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="title">Title</label>
+          <input type="text" placeholder="Title" id="title" required />
+        </div>
+        <div>
+          <label for="details">Details</label>
+          <input type="text" placeholder="Description" id="details" required />
+        </div>
+        <div>
+          <label for="where">Where</label>
+          <input type="text" placeholder="Location" id="where" required />
+        </div>
+        <div>
+          <label for="start">Start</label>
+          <input type="datetime-local" id="start" required />
+        </div>
+        <div>
+          <label for="end">End</label>
+          <input type="datetime-local" id="end" required />
+        </div>
+        <div>
+          <label for="image">Image</label>
+          <input type="file" id="image" required />
+        </div>
+        <button id="submitBtn">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <p>&copy;International Photography Meetup Organization</p>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </footer>
+  </body>
+</html>
