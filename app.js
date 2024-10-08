@@ -16,6 +16,20 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('tiny'));
 
+// Object for events
+const eventObjects = [
+  {
+    id: '#',
+    category: '#',
+    title: '#',
+    hostName: '#',
+    startDate: '#',
+    endDate: '#',
+    details: '#',
+    image: '#',
+  },
+];
+
 // Set up routes
 app.get('/', (req, res) => {
   res.render('index');
