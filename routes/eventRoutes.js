@@ -18,4 +18,6 @@ router.get('/event', (req, res) => {
   res.render('event');
 });
 
+//put /events/event: update a event by id
+router.put('/:id', controller.update);
 module.exports = router;
