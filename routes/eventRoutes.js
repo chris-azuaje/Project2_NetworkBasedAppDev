@@ -1,4 +1,6 @@
 const express = require('express');
+const controller = require('../controllers/eventController');
+
 const router = express.Router();
 
 // GET /events: send all events to the user
