@@ -1,71 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=
-        , initial-scale=1.0"
-    />
-    <title>International Photography Meetup Organization</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/1fd1ffd6f1.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <nav id="nav_top">
-        <div>
-          <img
-            src="/images/Logo.png"
-            alt="International photography meetup logo"
-            id="IPM_logo"
-            onclick="location.href = '/'"
-          />
-          <h1>IPMO</h1>
-        </div>
-        <div>
-          <a href="/events/newEvent">New Event</a>
-          <a href="#">Sign Up</a>
-          <a href="#">Login</a>
-        </div>
-      </nav>
-      <nav id="nav_bottom">
-        <a href="/events">Events</a>
-      </nav>
-    </header>
-    <main>
-      <h2>Meetups 🤝</h2>
-      <ul>
-        <li><a href="/events/event">Oslo, Norway Meetup</a></li>
-        <li><a href="/events/event">Barcelona, Spain Workshop</a></li>
-        <li><a href="/events/event">Zurich, Switzerland Meetup</a></li>
-      </ul>
-      <h2>Trips ✈️</h2>
-      <ul>
-        <li><a href="/events/event">Oslo - Flåm Railway</a></li>
-        <li>
-          <a href="/events/event"
-            >Barcelona - La Sagrada Familia & Park Guell</a
-          >
-        </li>
-        <li>
-          <a href="/events/event">Zurich - Lake Zurich, Badi & Roger Federer</a>
-        </li>
-      </ul>
-    </main>
-    <footer>
-      <div>
-        <p>&copy;International Photography Meetup Organization</p>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
-      <div>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-      </div>
-    </footer>
-  </body>
-</html>
+<%- include('./partials/header.ejs') %>
+<main>
+  <h2>Meetups 🤝</h2>
+  <ul>
+    <li><a href="/events/event">Oslo, Norway Meetup</a></li>
+    <li><a href="/events/event">Barcelona, Spain Workshop</a></li>
+    <li><a href="/events/event">Zurich, Switzerland Meetup</a></li>
+  </ul>
+  <h2>Trips ✈️</h2>
+  <ul>
+    <li><a href="/events/event">Oslo - Flåm Railway</a></li>
+    <li>
+      <a href="/events/event">Barcelona - La Sagrada Familia & Park Guell</a>
+    </li>
+    <li>
+      <a href="/events/event">Zurich - Lake Zurich, Badi & Roger Federer</a>
+    </li>
+  </ul>
+</main>
+<%- include('./partials/footer.ejs') %>

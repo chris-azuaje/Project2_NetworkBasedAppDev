@@ -6,6 +6,12 @@ const eventRoutes = require('./routes/eventRoutes');
 // create app
 const app = express();
 
+let exampleEvents = [
+  { id: 1, event: 'Event1' },
+  { id: 2, event: 'Event2' },
+  { id: 3, event: 'Event3' },
+];
+
 // configure app
 let port = 3000;
 let host = 'localhost';
@@ -20,6 +26,23 @@ app.use(morgan('tiny'));
 // Set up routes
 app.get('/', (req, res) => {
   res.render('index');
+});
+
+app.get('/events/:eid', (req, res) => {
+  console.log(req.params);
+  let id = req.params.eid;
+  let event = exampleEvents.find((element) => element.id === parseInt(id));
+  // res.send('Send event with id ' + id);
+  res.json(event);
+});
+
+app.get('/about', (req, res) => {
+  // res.send('This is the about page');
+  res.render('about');
+});
+
+app.get('/contact', (req, res) => {
+  res.render('contact');
 });
 
 app.use('/events', eventRoutes);
